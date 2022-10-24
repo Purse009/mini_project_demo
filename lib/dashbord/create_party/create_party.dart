@@ -79,7 +79,6 @@ class _CreatePartyState extends State<CreateParty> {
   _checkValidate() {
     final FormState form = _formKey.currentState!;
     if (form.validate()) {
-      print('ddddddd ${_amountPeople.text}');
       Navigator.of(context).pop(
         PartyListData(
             partyID: Random().nextInt(20),
